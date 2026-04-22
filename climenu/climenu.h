@@ -6,6 +6,7 @@
 #ifndef CLIMENU_H
 #define CLIMENU_H 1
 
+#include <string.h>
 #include <inttypes.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -17,5 +18,8 @@ typedef struct {
 } climenu_t;
 
 extern uint16_t menuselect(climenu_t* menu);
+extern climenu_t *newmenu();
+extern void additem(climenu_t* menu, char *item);
+extern void freemenu(climenu_t *menu);
 
 #endif
