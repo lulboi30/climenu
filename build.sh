@@ -11,7 +11,7 @@ rm bin/climenu.o
 echo "Building Static Object"
 
 gcc -c -std=c99 climenu/climenu.c -o bin/climenu.o
-ar rcs bin/climenu.a bin/libclimenu.o
+ar rcs bin/libclimenu.a bin/climenu.o
 rm bin/climenu.o
 
 echo "Copy Header To 'bin' Folder? [y/n]"
